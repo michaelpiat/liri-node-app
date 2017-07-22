@@ -30,6 +30,9 @@ switch (command) {
 	case "do-what-it-says":
 			doWhatItSays();
 		break;
+	default:
+			instructions();
+		break;
 }
 }
 // Twitter function
@@ -131,6 +134,10 @@ function doWhatItSays() {
 		search(command, title);
 	})
 	
+}
+
+function instructions() {
+	console.log("Please select: my-tweets, spotify-this-song <song name>, movie-this <movie name>, or do-what-it-says.")
 }
 
 
